@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="importmap-shim">
+      {
+        "imports": {
+          "app":"/buildless-hot-reload-demo/app.js",
+          "app/":"/buildless-hot-reload-demo/app/",
+          "dep/ramda": "https://unsafe-production.jspm.io/ramda@0.26.1",
+          "dep/xterm": "https://unsafe-production.jspm.io/xterm@3.14.5",
+          "dep/react": "https://unsafe-production.jspm.io/react@16.12.0",
+          "dep/react-dom": "https://unsafe-production.jspm.io/react-dom@16.12.0"
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/es-module-shims@0.4.2/dist/es-module-shims.min.js"></script>
+    <script src="/buildless-hot-reload-demo/prod.js"></script>
+    <script src="/buildless-hot-reload-demo/index.js"></script>
+  </body>
+</html>
